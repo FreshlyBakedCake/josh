@@ -25,7 +25,7 @@ defer = "0.2.1"
 env_logger = "0.11.5"
 log = "0.4.29"
 futures = "0.3.31"
-gix = { version = "0.75.0", default-features = false }
+gix = { version = "0.76.0", default-features = false }
 gix-hash = "0.19.0"
 gix-object = "0.50.2"
 gix-config = "0.47.1"
@@ -35,9 +35,9 @@ libc = "0.2.178"
 regex = "1.12.2"
 rs_tracing = { version = "1.1.0", features = ["rs_tracing"] }
 serde = { version = "1.0.228", features = ["std", "derive"] }
-serde_json = "1.0.145"
+serde_json = "1.0.147"
 serde_yaml = "0.9.34"
-toml = "0.9.8"
+toml = "0.9.10"
 tracing-subscriber = { version = "0.3.22", features = ["env-filter"] }
 tempfile = "3.23.0"
 hex = "0.4.3"
@@ -70,12 +70,12 @@ version = "0.7.17"
 features = ["compat"]
 
 [workspace.dependencies.reqwest]
-version = "0.12.26"
+version = "0.12.28"
 default-features = false
-features = ["blocking", "json"]
+features = ["blocking", "default-tls", "json"]
 
 [workspace.dependencies.tracing]
-version = "0.1.43"
+version = "0.1.44"
 features = ["max_level_trace", "release_max_level_trace"]
 
 [workspace.dependencies.clap]
